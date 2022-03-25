@@ -6,9 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock paper scissors</title>
+    <link href="rpsStyle.css" rel="stylesheet">
 </head>
 <body>
-<button id="rpsButton">Rock paper scissors game</button>
+<div class="container">
+    <div class="leftSide"></div>
+    <div class="rpsContents">
+        <strong style="font-size: 50px;">Score</strong>
+        <div class="score">
+            <div class="humanScore">
+                0
+            </div>
+            <p class="colon">:</p>
+            <div class="robotScore">
+                0
+            </div>
+        </div>
+        <div id="winner" style="height: 50px;">
+
+        </div>
+
+        <div class="visualHand">
+            <div class="left">
+            
+            </div>
+            <div class="right">
+            
+            </div>
+        </div>
+        
+        <div class="choices">
+            <button id="Rock" data-hand="rock">🪨 </button>
+
+            <button id="Paper" data-hand="paper"> 📑 </button>
+            
+            <button id="Scissors" data-hand="scissor">✂️</button>
+        </div>
+
+        <div class="actualWinner" style="height: 30px;">
+
+    </div>
+    <div class="rightSide"></div>
+</div>
+
+
+</div>
 </body>
 <script type="text/javascript" src="gameScript.js"></script>
 </html>
